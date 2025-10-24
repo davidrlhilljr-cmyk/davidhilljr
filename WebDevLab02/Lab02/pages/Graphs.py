@@ -52,7 +52,7 @@ try:
             json_data = json.load(f)
         st.success("JSON data loaded successfully.")
     else:
-        st.warning("JSON file not found at {file_path}.")
+        st.warning(f"JSON file not found at {file_path}.")
 except Exception as e:
     st.error(f"Error loading JSON: {e}")
 
