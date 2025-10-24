@@ -48,7 +48,7 @@ try:
     ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     file_path = os.path.join(ROOT_DIR, "data.json")
     if os.path.exists("data.json"):
-        with open("data.json") as f:
+        with open("file_path") as f:
             json_data = json.load(f)
         st.success("JSON data loaded successfully.")
     else:
