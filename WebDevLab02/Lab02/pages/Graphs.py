@@ -50,9 +50,9 @@ try:
     if os.path.exists("data.json"):
         with open("data.json") as f:
             json_data = json.load(f)
-        st.success("JSON data loaded successfully.")
-    except Exception as e:
-        st.error(f"Error loading JSON: {e}")
+            st.success("JSON data loaded successfully.")
+except Exception as e:
+    st.error(f"Error loading JSON: {e}")
 else:
     st.warning("JSON file not found.")
 
